@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Properties — Aurelia Estates</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="aurelia/style.css">
+</head>
+<body>
+  <header class="site-header solid">
+    <div class="header-inner">
+      <a class="brand" href="index.html">
+        <svg class="logo-mark" viewBox="0 0 64 64" fill="none"><rect x="8" y="8" width="48" height="48" rx="6" stroke="currentColor" stroke-width="2"/><path d="M32 14 L50 32 L32 50 L14 32 Z" stroke="currentColor" stroke-width="2"/><circle cx="32" cy="32" r="5" fill="currentColor"/></svg>
+        <span class="brand-name">AURELIA<small>ESTATES</small></span>
+      </a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a class="active" href="properties.html">Properties</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact Us</a>
+        <a class="btn btn-gold" href="contact.html">Book a Viewing</a>
+      </nav>
+      <button class="nav-toggle">☰</button>
+    </div>
+    <div class="mobile-panel"><a href="index.html">Home</a><a href="properties.html">Properties</a><a href="contact.html">Contact</a></div>
+  </header>
+
+  <section class="page-hero compact">
+    <div class="container">
+      <span class="eyebrow">Listings</span>
+      <h1>Featured &amp; luxury properties</h1>
+      <p>Sample inventory for demonstration — ready to become a WordPress property archive.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <form class="search-card" id="property-search" style="margin-top:0">
+        <div class="search-grid">
+          <div class="field"><label>Type</label><select><option>All types</option><option>Villa</option><option>Penthouse</option></select></div>
+          <div class="field"><label>Location</label><select><option>All locations</option><option>Greenwich</option><option>Manhattan</option></select></div>
+          <div class="field"><label>Category</label><select><option>Featured</option><option>Luxury</option></select></div>
+          <div class="field"><label>Price</label><select><option>Any</option><option>$2.5M+</option></select></div>
+          <button class="btn btn-dark" type="submit">Search</button>
+        </div>
+      </form>
+      <div class="property-grid" style="margin-top:36px">
+        <article class="property-card">
+          <div class="property-media"><img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80" alt="Prime Towers"><span class="badge">Featured</span></div>
+          <div class="property-body"><div class="property-meta"><span>Manhattan · Penthouse</span></div><h3>Prime Towers</h3><p>Gallery proportions and a sheltered park terrace.</p><div class="price">$3.75M</div><div class="specs"><span>4 beds</span><span>3 baths</span><span>3,240 sq ft</span></div><a class="btn btn-outline" href="property.html">View Details</a></div>
+        </article>
+        <article class="property-card">
+          <div class="property-media"><img src="https://images.unsplash.com/photo-1600047509782-20d39509f26d?auto=format&fit=crop&w=1200&q=80" alt="Orchid Homes"><span class="badge gold">New</span></div>
+          <div class="property-body"><div class="property-meta"><span>Greenwich · Estate</span></div><h3>Orchid Homes</h3><p>Garden rooms and a quiet wing for guests.</p><div class="price">$4.25M</div><div class="specs"><span>5 beds</span><span>4 baths</span><span>4,810 sq ft</span></div><a class="btn btn-outline" href="property.html">View Details</a></div>
+        </article>
+        <article class="property-card">
+          <div class="property-media"><img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1200&q=80" alt="Harmony Homes"><span class="badge">Family</span></div>
+          <div class="property-body"><div class="property-meta"><span>Westport · Residence</span></div><h3>Harmony Homes</h3><p>Volumes opening to lawn and pool.</p><div class="price">$3.95M</div><div class="specs"><span>4 beds</span><span>3 baths</span><span>3,680 sq ft</span></div><a class="btn btn-outline" href="property.html">View Details</a></div>
+        </article>
+        <article class="property-card">
+          <div class="property-media"><img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=1200&q=80" alt="Prime Homes"><span class="badge gold">Luxury</span></div>
+          <div class="property-body"><div class="property-meta"><span>Greenwich · Villa</span></div><h3>Prime Homes</h3><p>Limestone villa with courtyard pool.</p><div class="price">$4.50M</div><div class="specs"><span>5 beds</span><span>5 baths</span><span>5,400 sq ft</span></div><a class="btn btn-outline" href="property.html">View Details</a></div>
+        </article>
+        <article class="property-card">
+          <div class="property-media"><img src="https://images.unsplash.com/photo-1613977257363-707ba9348227?auto=format&fit=crop&w=1200&q=80" alt="Grand Castle"><span class="badge gold">Signature</span></div>
+          <div class="property-body"><div class="property-meta"><span>Greenwich · Manor</span></div><h3>Grand Castle</h3><p>Stone and timber, reimagined for now.</p><div class="price">$6.80M</div><div class="specs"><span>6 beds</span><span>6 baths</span><span>8,120 sq ft</span></div><a class="btn btn-outline" href="property.html">View Details</a></div>
+        </article>
+        <article class="property-card">
+          <div class="property-media"><img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=80" alt="Urban Vista"><span class="badge">City</span></div>
+          <div class="property-body"><div class="property-meta"><span>Brooklyn · Loft</span></div><h3>Urban Vista</h3><p>Harbor terrace and warm oak interiors.</p><div class="price">$2.85M</div><div class="specs"><span>3 beds</span><span>2 baths</span><span>2,140 sq ft</span></div><a class="btn btn-outline" href="property.html">View Details</a></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container copyright"><span>© 2026 Aurelia Estates</span><a href="index.html">Home</a></div>
+  </footer>
+  <script src="aurelia/assets/js/main.js"></script>
+</body>
+</html>

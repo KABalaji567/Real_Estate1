@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prime Towers — Aurelia Estates</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="aurelia/style.css">
+</head>
+<body>
+  <header class="site-header solid">
+    <div class="header-inner">
+      <a class="brand" href="index.html">
+        <svg class="logo-mark" viewBox="0 0 64 64" fill="none"><rect x="8" y="8" width="48" height="48" rx="6" stroke="currentColor" stroke-width="2"/><path d="M32 14 L50 32 L32 50 L14 32 Z" stroke="currentColor" stroke-width="2"/><circle cx="32" cy="32" r="5" fill="currentColor"/></svg>
+        <span class="brand-name">AURELIA<small>ESTATES</small></span>
+      </a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a class="active" href="properties.html">Properties</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact Us</a>
+        <a class="btn btn-gold" href="contact.html">Contact Agent</a>
+      </nav>
+      <button class="nav-toggle">☰</button>
+    </div>
+    <div class="mobile-panel"><a href="properties.html">Properties</a><a href="contact.html">Contact</a></div>
+  </header>
+
+  <section class="section" style="padding-top:120px">
+    <div class="container">
+      <span class="eyebrow">Listing · Manhattan</span>
+      <div style="display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;align-items:end;margin:8px 0 28px">
+        <div>
+          <h1>Prime Towers</h1>
+          <p>Fifth Avenue corridor · New York, NY 10022</p>
+        </div>
+        <div class="price">$3.75M</div>
+      </div>
+      <div class="gallery">
+        <img class="gallery-main" src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1600&q=80" alt="Prime Towers living space">
+        <div class="gallery-side">
+          <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=900&q=80" alt="Kitchen">
+          <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=900&q=80" alt="Bedroom">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <div class="container detail-layout">
+      <div>
+        <div class="detail-facts">
+          <div class="fact"><span>Bedrooms</span><strong>4</strong></div>
+          <div class="fact"><span>Bathrooms</span><strong>3</strong></div>
+          <div class="fact"><span>Area</span><strong>3,240 sq ft</strong></div>
+          <div class="fact"><span>Type</span><strong>Penthouse</strong></div>
+        </div>
+        <h2>Property description</h2>
+        <p>Prime Towers is a high-floor residence composed for art, light, and long views. The great room opens to a sheltered terrace; the kitchen is a working atelier in honed stone and pale oak. Sleeping rooms sit behind a gallery hall, with a primary suite that includes a dressing room and a bath looking west.</p>
+        <p>This is a home for people who entertain without spectacle — proportions that hold a dinner, a library wall, and a quiet morning equally well.</p>
+        <h3 style="margin:28px 0 14px">Amenities</h3>
+        <div class="amenities">
+          <span>Doorman</span><span>Private terrace</span><span>Wine closet</span><span>Smart climate</span>
+          <span>Spa bath</span><span>Staff entrance</span><span>Storage cage</span><span>Fitness gallery</span>
+        </div>
+        <h3 style="margin:36px 0 16px">Similar properties</h3>
+        <div class="property-grid" style="grid-template-columns:1fr 1fr">
+          <article class="property-card">
+            <div class="property-media"><img src="https://images.unsplash.com/photo-1600607687644-c7171b42498b?auto=format&fit=crop&w=800&q=80" alt="Orchid Towers"></div>
+            <div class="property-body"><h3>Orchid Towers</h3><div class="price">$8.75M</div><a href="property.html">View</a></div>
+          </article>
+          <article class="property-card">
+            <div class="property-media"><img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=800&q=80" alt="Urban Vista"></div>
+            <div class="property-body"><h3>Urban Vista</h3><div class="price">$2.85M</div><a href="property.html">View</a></div>
+          </article>
+        </div>
+      </div>
+      <aside class="sticky-card">
+        <h3>Inquire about this home</h3>
+        <p>Clara Voss · Principal advisor</p>
+        <a class="btn btn-gold" href="contact.html" style="width:100%;margin:12px 0">Contact Agent</a>
+        <form data-success="Inquiry sent. We will confirm a viewing window shortly.">
+          <div class="field" style="margin-bottom:10px"><label>Name</label><input required></div>
+          <div class="field" style="margin-bottom:10px"><label>Email</label><input type="email" required></div>
+          <div class="field" style="margin-bottom:10px"><label>Message</label><textarea required placeholder="Request a private viewing"></textarea></div>
+          <button class="btn btn-dark" type="submit" style="width:100%">Send inquiry</button>
+        </form>
+      </aside>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container copyright"><span>© 2026 Aurelia Estates</span><a href="properties.html">All listings</a></div>
+  </footer>
+  <div class="toast"></div>
+  <script src="aurelia/assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aurelia Estates — Private Residences</title>
+  <meta name="description" content="Aurelia Estates is a premium real estate atelier for private homes, luxury villas, and considered living in the Northeast.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="aurelia/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">
+        <svg class="logo-mark" viewBox="0 0 64 64" fill="none" aria-hidden="true"><rect x="8" y="8" width="48" height="48" rx="6" stroke="currentColor" stroke-width="2"/><path d="M32 14 L50 32 L32 50 L14 32 Z" stroke="currentColor" stroke-width="2"/><circle cx="32" cy="32" r="5" fill="currentColor"/></svg>
+        <span class="brand-name">AURELIA<small>ESTATES</small></span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a class="active" href="index.html">Home</a>
+        <a href="home-2.html">Home 2</a>
+        <a href="about.html">About Us</a>
+        <a href="properties.html">Properties</a>
+        <a href="services.html">Services</a>
+        <a href="index.html#testimonials">Testimonials</a>
+        <a href="index.html#faq">FAQ</a>
+        <a href="contact.html">Contact Us</a>
+        <a class="btn btn-gold" href="contact.html">Book a Viewing</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Open menu">☰</button>
+    </div>
+    <div class="mobile-panel">
+      <a href="index.html">Home</a>
+      <a href="home-2.html">Home 2</a>
+      <a href="about.html">About Us</a>
+      <a href="properties.html">Properties</a>
+      <a href="services.html">Services</a>
+      <a href="index.html#testimonials">Testimonials</a>
+      <a href="index.html#faq">FAQ</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-media">
+      <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=2000&q=80" alt="Sunlit luxury residence with pool terrace">
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="container">
+      <div class="hero-copy reveal">
+        <span class="eyebrow">Private brokerage · Greenwich & beyond</span>
+        <h1>Find your perfect place to call home.</h1>
+        <p>Aurelia curates residences with architectural presence, quiet luxury, and a sense of belonging — from city penthouses to waterfront estates.</p>
+        <div class="hero-actions">
+          <a class="btn btn-gold" href="properties.html">Explore Properties</a>
+          <a class="btn btn-ghost" href="contact.html">Contact Us</a>
+        </div>
+        <div class="hero-stats">
+          <div><strong data-count="18" data-suffix="+">0</strong><span>Years of counsel</span></div>
+          <div><strong data-count="420" data-suffix="+">0</strong><span>Homes placed</span></div>
+          <div><strong data-count="96" data-suffix="%">0</strong><span>Client retention</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <form class="search-card reveal d2" id="property-search">
+      <div class="search-grid">
+        <div class="field">
+          <label for="type">Property Type</label>
+          <select id="type">
+            <option>Residence</option>
+            <option>Villa</option>
+            <option>Penthouse</option>
+            <option>Townhouse</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="location">Location</label>
+          <select id="location">
+            <option>Greenwich, CT</option>
+            <option>Westport, CT</option>
+            <option>Manhattan, NY</option>
+            <option>Brooklyn, NY</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="category">Category</label>
+          <select id="category">
+            <option>Featured</option>
+            <option>Luxury</option>
+            <option>Family Homes</option>
+            <option>New Release</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="price">Price Range</label>
+          <select id="price">
+            <option>$1M – $2.5M</option>
+            <option>$2.5M – $5M</option>
+            <option>$5M – $10M</option>
+            <option>$10M+</option>
+          </select>
+        </div>
+        <button class="btn btn-dark" type="submit">Search</button>
+      </div>
+    </form>
+  </div>
+
+  <section class="section" id="about">
+    <div class="container about-grid">
+      <div class="about-visual reveal">
+        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1400&q=80" alt="Aurelia advisors in a contemporary living room">
+        <div class="about-badge"><strong>2008</strong>Established as a private atelier</div>
+      </div>
+      <div class="about-copy reveal d2">
+        <span class="eyebrow">About Aurelia</span>
+        <h2>Residences, chosen with intention.</h2>
+        <p class="lede">We are not a volume brokerage. Aurelia is a discreet studio of advisors who match architecture, lifestyle, and long-term value — for buyers, sellers, and families who expect composure at every step.</p>
+        <div class="story-list">
+          <div><strong>Our story</strong><span>Founded in Greenwich, we grew by referral — representing homes that feel collected rather than staged, and clients who prefer clarity over noise.</span></div>
+          <div><strong>Our craft</strong><span>Every listing is photographed, described, and qualified by specialists who understand both design and neighborhood nuance.</span></div>
+        </div>
+        <a class="btn btn-outline" href="about.html">Read More</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section process">
+    <div class="container">
+      <div class="section-head center">
+        <span class="eyebrow">A considered path</span>
+        <h2>How to find your dream home</h2>
+        <p class="lede">Four calm steps from first conversation to keys — designed to keep decisions clear and visits worthwhile.</p>
+      </div>
+      <div class="process-grid">
+        <article class="process-card reveal"><div class="process-num">01</div><div class="icon-circle">⌕</div><h3>Search properties</h3><p>Share how you live. We refine type, location, and budget into a private shortlist — not a flood of listings.</p></article>
+        <article class="process-card reveal d1"><div class="process-num">02</div><div class="icon-circle">⌂</div><h3>Choose your property</h3><p>Tour residences with context: light, materials, schools, commute, and how the home will age with you.</p></article>
+        <article class="process-card reveal d2"><div class="process-num">03</div><div class="icon-circle">◎</div><h3>Schedule a visit</h3><p>Private viewings, twilight walks, and second looks with architects or inspectors when the moment is right.</p></article>
+        <article class="process-card reveal d3"><div class="process-num">04</div><div class="icon-circle">✦</div><h3>Complete purchase</h3><p>Negotiation, diligence, and closing choreography handled with the same quiet precision as the search.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Atelier services</span>
+        <h2>Real estate, practiced as a craft.</h2>
+      </div>
+      <div class="services-grid">
+        <article class="service-card"><div class="icon-circle">◆</div><h3>Luxury homes</h3><p>Estates and penthouses presented with editorial care and off-market access.</p></article>
+        <article class="service-card"><div class="icon-circle">◇</div><h3>Single homes</h3><p>Standalone residences for clients seeking privacy, gardens, and architectural character.</p></article>
+        <article class="service-card"><div class="icon-circle">▣</div><h3>Family homes</h3><p>Layouts, school districts, and neighborhoods chosen for how families actually live.</p></article>
+        <article class="service-card"><div class="icon-circle">→</div><h3>Property buying</h3><p>Representation that protects your position from offer through occupancy.</p></article>
+        <article class="service-card"><div class="icon-circle">←</div><h3>Property selling</h3><p>Positioning, pricing, and a buyer audience that respects the home’s true caliber.</p></article>
+        <article class="service-card"><div class="icon-circle">◈</div><h3>Consultation</h3><p>Portfolio advice, relocation planning, and investment reads without the hard sell.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="properties">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Featured listings</span>
+        <h2>Homes with presence.</h2>
+        <p class="lede">A rotating collection of residences we are proud to represent — photographed on site, described without exaggeration.</p>
+      </div>
+      <div class="property-grid">
+        <article class="property-card">
+          <div class="property-media">
+            <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80" alt="Prime Towers exterior">
+            <span class="badge">Featured</span>
+          </div>
+          <div class="property-body">
+            <div class="property-meta"><span>Manhattan, NY · Penthouse</span><span>For sale</span></div>
+            <h3>Prime Towers</h3>
+            <p>A high-floor residence with gallery proportions and a sheltered terrace over the park.</p>
+            <div class="price">$3.75M</div>
+            <div class="specs"><span>4 beds</span><span>3 baths</span><span>3,240 sq ft</span></div>
+            <a class="btn btn-outline" href="property.html">View Details</a>
+          </div>
+        </article>
+        <article class="property-card">
+          <div class="property-media">
+            <img src="https://images.unsplash.com/photo-1600047509782-20d39509f26d?auto=format&fit=crop&w=1200&q=80" alt="Orchid Homes">
+            <span class="badge gold">New</span>
+          </div>
+          <div class="property-body">
+            <div class="property-meta"><span>Greenwich, CT · Estate</span><span>For sale</span></div>
+            <h3>Orchid Homes</h3>
+            <p>Garden-facing family rooms, a chef’s kitchen, and a quiet wing for guests or work.</p>
+            <div class="price">$4.25M</div>
+            <div class="specs"><span>5 beds</span><span>4 baths</span><span>4,810 sq ft</span></div>
+            <a class="btn btn-outline" href="property.html">View Details</a>
+          </div>
+        </article>
+        <article class="property-card">
+          <div class="property-media">
+            <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1200&q=80" alt="Harmony Homes">
+            <span class="badge">Family</span>
+          </div>
+          <div class="property-body">
+            <div class="property-meta"><span>Westport, CT · Residence</span><span>For sale</span></div>
+            <h3>Harmony Homes</h3>
+            <p>Light-filled volumes opening to a lawn and pool — composed for everyday living.</p>
+            <div class="price">$3.95M</div>
+            <div class="specs"><span>4 beds</span><span>3 baths</span><span>3,680 sq ft</span></div>
+            <a class="btn btn-outline" href="property.html">View Details</a>
+          </div>
+        </article>
+        <article class="property-card">
+          <div class="property-media">
+            <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=80" alt="Urban Vista">
+            <span class="badge">City</span>
+          </div>
+          <div class="property-body">
+            <div class="property-meta"><span>Brooklyn, NY · Loft</span><span>For sale</span></div>
+            <h3>Urban Vista</h3>
+            <p>Industrial bones, warm oak, and a skyline terrace for evenings above the harbor.</p>
+            <div class="price">$2.85M</div>
+            <div class="specs"><span>3 beds</span><span>2 baths</span><span>2,140 sq ft</span></div>
+            <a class="btn btn-outline" href="property.html">View Details</a>
+          </div>
+        </article>
+        <article class="property-card">
+          <div class="property-media">
+            <img src="https://images.unsplash.com/photo-1613977257363-707ba9348227?auto=format&fit=crop&w=1200&q=80" alt="Grand Castle">
+            <span class="badge gold">Signature</span>
+          </div>
+          <div class="property-body">
+            <div class="property-meta"><span>Greenwich, CT · Manor</span><span>For sale</span></div>
+            <h3>Grand Castle</h3>
+            <p>Stone, timber, and a long drive — a manor house reimagined for contemporary life.</p>
+            <div class="price">$6.80M</div>
+            <div class="specs"><span>6 beds</span><span>6 baths</span><span>8,120 sq ft</span></div>
+            <a class="btn btn-outline" href="property.html">View Details</a>
+          </div>
+        </article>
+        <article class="property-card">
+          <div class="property-media">
+            <img src="https://images.unsplash.com/photo-1600585153490-76fb20a32601?auto=format&fit=crop&w=1200&q=80" alt="Harbor Atelier">
+            <span class="badge">Waterfront</span>
+          </div>
+          <div class="property-body">
+            <div class="property-meta"><span>Darien, CT · Villa</span><span>For sale</span></div>
+            <h3>Harbor Atelier</h3>
+            <p>A low pavilion on the water with floor-to-ceiling glass and a private dock.</p>
+            <div class="price">$5.10M</div>
+            <div class="specs"><span>4 beds</span><span>4 baths</span><span>4,050 sq ft</span></div>
+            <a class="btn btn-outline" href="property.html">View Details</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section luxury" id="luxury">
+    <div class="container">
+      <div class="luxury-strip">
+        <div>
+          <span class="eyebrow">The collection</span>
+          <h2>Luxury properties, privately held.</h2>
+        </div>
+        <p class="lede">A quieter gallery of villas and towers for clients seeking rarity — materials, privacy, and a sense of arrival that cannot be rushed.</p>
+      </div>
+      <div class="property-grid">
+        <article class="property-card">
+          <div class="property-media"><img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=1200&q=80" alt="Prime Homes"><span class="badge gold">Luxury</span></div>
+          <div class="property-body"><div class="property-meta"><span>Greenwich · Estate</span></div><h3>Prime Homes</h3><p>A limestone villa with a courtyard pool and a gallery for art.</p><div class="price">$4.50M</div><div class="specs"><span>5 beds</span><span>5 baths</span><span>5,400 sq ft</span></div></div>
+        </article>
+        <article class="property-card">
+          <div class="property-media"><img src="https://images.unsplash.com/photo-1600607687644-c7171b42498b?auto=format&fit=crop&w=1200&q=80" alt="Orchid Towers"><span class="badge gold">Luxury</span></div>
+          <div class="property-body"><div class="property-meta"><span>Manhattan · Tower</span></div><h3>Orchid Towers</h3><p>Full-floor living with a library, spa bath, and staff entrance.</p><div class="price">$8.75M</div><div class="specs"><span>4 beds</span><span>4 baths</span><span>4,900 sq ft</span></div></div>
+        </article>
+        <article class="property-card">
+          <div class="property-media"><img src="https://images.unsplash.com/photo-1602343168117-bb8ffe3e2e9f?auto=format&fit=crop&w=1200&q=80" alt="Single Villa"><span class="badge gold">Villa</span></div>
+          <div class="property-body"><div class="property-meta"><span>Westport · Villa</span></div><h3>Single Villa</h3><p>One residence on a wooded acre — glass pavilions and a still pond.</p><div class="price">$3.20M</div><div class="specs"><span>3 beds</span><span>3 baths</span><span>3,100 sq ft</span></div></div>
+        </article>
+        <article class="property-card">
+          <div class="property-media"><img src="https://images.unsplash.com/photo-1600585154084-4e5fe7c39198?auto=format&fit=crop&w=1200&q=80" alt="Luxury Villa"><span class="badge gold">Villa</span></div>
+          <div class="property-body"><div class="property-meta"><span>New Canaan · Villa</span></div><h3>Luxury Villa</h3><p>Mediterranean volumes, a courtyard, and a lower-level cinema.</p><div class="price">$2.50M</div><div class="specs"><span>4 beds</span><span>4 baths</span><span>3,860 sq ft</span></div></div>
+        </article>
+        <article class="property-card">
+          <div class="property-media"><img src="https://images.unsplash.com/photo-1600047509358-9dc75507daeb?auto=format&fit=crop&w=1200&q=80" alt="Luxury Home"><span class="badge gold">Residence</span></div>
+          <div class="property-body"><div class="property-meta"><span>Darien · Home</span></div><h3>Luxury Home</h3><p>A composed family house with a studio wing and walled garden.</p><div class="price">$3.40M</div><div class="specs"><span>5 beds</span><span>4 baths</span><span>4,220 sq ft</span></div></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="why">
+    <div class="container why-grid">
+      <div class="stat-panel">
+        <span class="eyebrow">Why Aurelia</span>
+        <h2>Counsel you can measure.</h2>
+        <div class="stat-row">
+          <div><strong data-count="18" data-suffix="+">0</strong><span>Years advising</span></div>
+          <div><strong data-count="12">0</strong><span>Specialist advisors</span></div>
+          <div><strong data-count="48" data-suffix="h">0</strong><span>Average response</span></div>
+          <div><strong data-count="9" data-suffix=".4">0</strong><span>Client rating</span></div>
+        </div>
+      </div>
+      <div class="benefit-grid">
+        <article class="benefit"><h3>Trusted experts</h3><p>Advisors who stay with you from first look to the week after move-in.</p></article>
+        <article class="benefit"><h3>Best selection</h3><p>On-market and quietly available homes, qualified before you visit.</p></article>
+        <article class="benefit"><h3>Professional consultation</h3><p>Design, legal, and financing partners introduced only when useful.</p></article>
+        <article class="benefit"><h3>Transparent process</h3><p>Clear timelines, written next steps, and no surprise fees.</p></article>
+        <article class="benefit"><h3>Customer support</h3><p>A dedicated line for viewings, documents, and post-closing questions.</p></article>
+        <article class="benefit"><h3>Exceptional results</h3><p>Outcomes measured in fit and composure — not just closing speed.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section hours">
+    <div class="container hours-grid">
+      <div>
+        <span class="eyebrow">Atelier hours</span>
+        <h2>We keep time for conversations that matter.</h2>
+        <p>Viewings can be arranged beyond the hours below. Sunday remains reserved for private appointments.</p>
+        <a class="btn btn-gold" href="contact.html">Speak with an advisor</a>
+      </div>
+      <ul class="hours-list">
+        <li><span>Monday — Friday</span><strong>08:00 – 22:00</strong></li>
+        <li><span>Saturday</span><strong>10:00 – 20:00</strong></li>
+        <li><span>Sunday</span><strong>10:00 – 18:00 · by appointment</strong></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section" id="testimonials">
+    <div class="container">
+      <div class="section-head center">
+        <span class="eyebrow">Reviews</span>
+        <h2>Words from those who live here now.</h2>
+      </div>
+      <div class="testimonial-track">
+        <article class="testimonial">
+          <div class="stars">★★★★★</div>
+          <p class="quote">“Aurelia never rushed us. They understood the light we wanted and found a house we still talk about a year later.”</p>
+          <div class="person">
+            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=200&q=80" alt="Daniela Dewitt">
+            <div><strong>Daniela Dewitt</strong><br><small>Buyer · Greenwich</small></div>
+          </div>
+        </article>
+        <article class="testimonial">
+          <div class="stars">★★★★★</div>
+          <p class="quote">“Selling felt editorial, not theatrical. The right buyers arrived, and the negotiation stayed civil.”</p>
+          <div class="person">
+            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80" alt="Lyle Kauffman">
+            <div><strong>Lyle Kauffman</strong><br><small>Seller · Manhattan</small></div>
+          </div>
+        </article>
+        <article class="testimonial">
+          <div class="stars">★★★★★</div>
+          <p class="quote">“Relocating with children is chaos. Aurelia made school districts and floor plans feel simple.”</p>
+          <div class="person">
+            <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=200&q=80" alt="Iina Jutila">
+            <div><strong>Iina Jutila</strong><br><small>Relocation · Westport</small></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="faq">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Guidance</span>
+        <h2>Questions, answered plainly.</h2>
+      </div>
+      <div class="faq-layout">
+        <div class="faq-tabs">
+          <button class="faq-tab active" data-target="faq-general">General questions</button>
+          <button class="faq-tab" data-target="faq-sales">Sales questions</button>
+        </div>
+        <div>
+          <div class="faq-panel active accordion" id="faq-general">
+            <details open><summary>How can I find my dream home?</summary><p>Begin with a conversation about how you live. We translate that into a private shortlist and arrange viewings only when a home is a genuine match.</p></details>
+            <details><summary>Can I schedule a property visit?</summary><p>Yes. Weekday twilight tours and weekend appointments are available. Use Contact Us or the inquiry form on any listing.</p></details>
+            <details><summary>How do I contact a real estate expert?</summary><p>Call +1 (203) 555-0148, write to hello@aureliaestates.com, or send a note through the form. An advisor replies within one business day.</p></details>
+            <details><summary>What services do you provide?</summary><p>Buying, selling, luxury representation, family home search, and consultation for relocations and portfolios.</p></details>
+          </div>
+          <div class="faq-panel accordion" id="faq-sales">
+            <details open><summary>How does the property buying process work?</summary><p>Discovery, shortlist, viewings, offer strategy, diligence, and closing. You receive a written timeline after the first meeting.</p></details>
+            <details><summary>Do you work with off-market homes?</summary><p>Yes. A portion of Aurelia’s collection is shared privately with qualified clients before public release.</p></details>
+            <details><summary>How do you price a home for sale?</summary><p>We combine recent comps, architectural quality, and buyer appetite — then agree a strategy with you before anything is listed.</p></details>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="tips">
+        <div>
+          <span class="eyebrow">Journal</span>
+          <h2>Get tips &amp; tricks to make better real estate decisions.</h2>
+          <p>Buying advice, investment notes, and sales guidance written for people who prefer substance over slogans.</p>
+        </div>
+        <a class="btn btn-gold" href="about.html">Read Aurelia Notes</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <div class="container contact-grid">
+      <div>
+        <span class="eyebrow">Contact</span>
+        <h2>Begin with a conversation.</h2>
+        <div class="info-stack" style="margin-top:28px">
+          <div class="info-card"><span>Phone</span>+1 (203) 555-0148</div>
+          <div class="info-card"><span>Email</span>hello@aureliaestates.com</div>
+          <div class="info-card"><span>Atelier</span>18 Harbor Lane, Greenwich, CT 06830</div>
+          <div class="info-card"><span>Hours</span>Mon–Fri 08:00–22:00 · Sat 10:00–20:00 · Sun by appointment</div>
+        </div>
+      </div>
+      <form class="form-card" data-success="Message received. An Aurelia advisor will write back shortly.">
+        <div class="form-grid">
+          <div class="field"><label>Full name</label><input required placeholder="Your name"></div>
+          <div class="field"><label>Email address</label><input type="email" required placeholder="you@email.com"></div>
+          <div class="field"><label>Phone number</label><input placeholder="+1"></div>
+          <div class="field"><label>Subject</label><input placeholder="Viewing, selling, or counsel"></div>
+          <div class="field full"><label>Message</label><textarea required placeholder="Tell us how you live, and what you are seeking."></textarea></div>
+          <div class="full"><button class="btn btn-gold" type="submit">Send Message</button></div>
+        </div>
+      </form>
+    </div>
+    <div class="container">
+      <div class="map-frame">
+        <div>
+          <h3>Greenwich atelier</h3>
+          <p>18 Harbor Lane · Map integration ready for Google Maps API in WordPress</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand" href="index.html"><span class="brand-name" style="color:#f6f1e8">AURELIA<small>ESTATES</small></span></a>
+        <p>A private real estate atelier for residences of character — Greenwich, Westport, and the city beyond.</p>
+        <p>+1 (203) 555-0148<br>hello@aureliaestates.com<br>18 Harbor Lane, Greenwich, CT 06830</p>
+        <div class="socials"><a href="#" aria-label="Instagram">Ig</a><a href="#" aria-label="LinkedIn">in</a><a href="#" aria-label="Pinterest">Pi</a></div>
+      </div>
+      <div>
+        <h4>Quick links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="properties.html">Properties</a></li>
+          <li><a href="about.html#team">Team</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Other links</h4>
+        <ul>
+          <li><a href="contact.html">Privacy Policy</a></li>
+          <li><a href="contact.html">Terms of Service</a></li>
+          <li><a href="about.html">Blogs</a></li>
+          <li><a href="services.html">Pricing</a></li>
+          <li><a href="index.html#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Working hours</h4>
+        <ul>
+          <li>Mon–Fri · 08:00–22:00</li>
+          <li>Saturday · 10:00–20:00</li>
+          <li>Sunday · 10:00–18:00</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container copyright">
+      <span>© 2026 Aurelia Estates. Sample website for demonstration.</span>
+      <span>WordPress-ready · Private residences</span>
+    </div>
+  </footer>
+  <div class="toast" role="status"></div>
+  <script src="aurelia/assets/js/main.js"></script>
+</body>
+</html>
